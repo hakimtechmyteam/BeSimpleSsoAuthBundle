@@ -24,6 +24,6 @@ class AdaptiveClient implements ClientInterface
 
     public function send(RequestInterface $request, MessageInterface $response)
     {
-        $this->client->send($request, $response, $this->options);
+        $this->client->send($request, $response);
     }
 }
